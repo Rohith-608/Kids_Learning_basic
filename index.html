@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Kids Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Balloons -->
+  <div class="balloon red"></div>
+  <div class="balloon yellow"></div>
+  <div class="balloon blue"></div>
+
+  <h1>🎈 Happy Kids Learning 🎈</h1>
+  <p class="subtitle">Click a letter to hear the sound!</p>
+
+  <div id="homeButtons" class="home-buttons">
+    <button id="alphabetBtn" class="menu-btn">🔤 Alphabets</button>
+    <button id="numberBtn" class="menu-btn">🔢 Numbers</button>
+    <button id="animalBtn" class="menu-btn">🐶 Animal and Sounds</button>
+    <button id="colourBtn" class="menu-btn">🎨 Colors</button>
+    <button id="shapeBtn" class="menu-btn">🔺 Shapes</button>
+  </div>
+
+  <button id="homeBtn" class="menu-btn home-btn">🏠 Home</button>
+
+    <section id="alphabets" class="section">
+        <h2>Alphabets</h2>
+        <p class="section-text">Tap a letter to learn its sound and word!</p>
+
+    <div class="card-container">
+        <div class="card" onclick="speak('A for Apple')">
+            <div class="letter">A</div>
+            <div class="emoji">🍎</div>
+            <div class="word">Apple</div>
+        </div>
+        <div class="card" onclick="speak('B for Ball')">
+            <div class="letter">B</div>
+            <div class="emoji">⚽</div>
+            <div class="word">Ball</div>
+        </div>
+        <div class="card" onclick="speak('C for Cat')">
+            <div class="letter">C</div>
+            <div class="emoji">🐱</div>
+            <div class="word">Cat</div>
+        </div>
+        <div class="card" onclick="speak('D for Dog')">
+            <div class="letter">D</div>
+            <div class="emoji">🐶</div>
+            <div class="word">Dog</div>
+        </div>
+        <div class="card" onclick="speak('E for Elephant')">
+            <div class="letter">E</div>
+            <div class="emoji">🐘</div>
+            <div class="word">Elephant</div>
+        </div>
+        <div class="card" onclick="speak('F for Fish')">
+            <div class="letter">F</div>
+            <div class="emoji">🐟</div>
+            <div class="word">Fish</div>
+        </div>
+        <div class="card" onclick="speak('G for Giraffe')">
+            <div class="letter">G</div>
+            <div class="emoji">🦒</div>
+            <div class="word">Giraffe</div>
+        </div>
+        <div class="card" onclick="speak('H for House')">
+            <div class="letter">H</div>
+            <div class="emoji">🏠</div>
+            <div class="word">House</div>
+        </div>
+        <div class="card" onclick="speak('M for Monkey')">
+            <div class="letter">M</div>
+            <div class="emoji">🐒</div>
+            <div class="word">Monkey</div>
+        </div>
+        <div class="card" onclick="speak('N for Nest')">
+            <div class="letter">N</div>
+            <div class="emoji">🪺</div>
+            <div class="word">Nest</div>
+        </div>
+        <div class="card" onclick="speak('O for Orange')">
+            <div class="letter">O</div>
+            <div class="emoji">🍊</div>
+            <div class="word">Orange</div>
+        </div>
+        <div class="card" onclick="speak('P for Penguin')">
+            <div class="letter">P</div>
+            <div class="emoji">🐧</div>
+            <div class="word">Penguin</div>
+        </div>
+        <div class="card" onclick="speak('Q for Queen')">
+            <div class="letter">Q</div>
+            <div class="emoji">👑</div>
+            <div class="word">Queen</div>
+        </div>
+        <div class="card" onclick="speak('W for Whale')">
+            <div class="letter">W</div>
+            <div class="emoji">🐋</div>
+            <div class="word">Whale</div>
+        </div>
+        <div class="card" onclick="speak('X for Xylophone')">
+            <div class="letter">X</div>
+            <div class="emoji">🎼</div>
+            <div class="word">Xylophone</div>
+        </div>
+        <div class="card" onclick="speak('Y for Yacht')">
+            <div class="letter">Y</div>
+            <div class="emoji">🛥️</div>
+            <div class="word">Yacht</div>
+        </div>
+        <div class="card" onclick="speak('Z for Zebra')">
+            <div class="letter">Z</div>
+            <div class="emoji">🦓</div>
+            <div class="word">Zebra</div>
+        </div>
+    </div>
+    </section>
+
+    <section id="numbers" class="section">
+    <h2>🔢 Numbers</h2>
+    <p class="section-text">Tap a number to hear it!</p>
+
+    <div class="card-container">
+        <div class="card" onclick="speak('One')">
+            <div class="letter">1</div>
+            <div class="emoji">🍎</div>
+            <div class="word">One</div>
+        </div>
+
+        <div class="card" onclick="speak('Two')">
+            <div class="letter">2</div>
+            <div class="emoji">🍎🍎</div>
+            <div class="word">Two</div>
+        </div>
+
+        <div class="card" onclick="speak('Three')">
+            <div class="letter">3</div>
+            <div class="emoji">🍎🍎🍎</div>
+            <div class="word">Three</div>
+        </div>
+
+        <div class="card" onclick="speak('Four')">
+            <div class="letter">4</div>
+            <div class="emoji">🍎🍎🍎🍎</div>
+            <div class="word">Four</div>
+        </div>
+
+        <div class="card" onclick="speak('Five')">
+            <div class="letter">5</div>
+            <div class="emoji">🍎🍎🍎🍎🍎</div>
+            <div class="word">Five</div>
+        </div>
+        <div class="card" onclick="speak('Six')">
+            <div class="letter">6</div>
+            <div class="emoji">🍎🍎🍎🍎🍎🍎</div>
+            <div class="word">Six</div>
+        </div>
+        <div class="card" onclick="speak('Seven')">
+            <div class="letter">7</div>
+            <div class="emoji">🍎🍎🍎🍎🍎🍎🍎</div>
+            <div class="word">Seven</div>
+        </div>
+        <div class="card" onclick="speak('Eight')">
+            <div class="letter">8</div>
+            <div class="emoji">🍎🍎🍎🍎🍎🍎🍎🍎</div>
+            <div class="word">Eight</div>
+        </div>
+        <div class="card" onclick="speak('Nine')">
+            <div class="letter">9</div>
+            <div class="emoji">🍎🍎🍎🍎🍎🍎🍎🍎🍎</div>
+            <div class="word">Nine</div>
+        </div>
+        <div class="card" onclick="speak('Ten')">
+            <div class="letter">10</div>
+            <div class="emoji">🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎</div>
+            <div class="word">Ten</div>
+        </div>
+    </div>
+    </section>
+
+    <section id="animals" class="section">
+    <h2>🐾 Animal Sounds</h2>
+    <p class="section-text">Tap an animal to hear its sound!</p>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="letter" onclick="speak('Dog')">🐶</div>
+            <div class="word">Dog</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/dog.mp3', event)">🔊</div>
+        </div>
+
+        <div class="card">
+            <div class="letter" onclick="speak('Cat')">😺</div>
+            <div class="word">Cat</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/cat.mp3', event)">🔊</div>
+        </div>
+
+        <div class="card">
+            <div class="letter" onclick="speak('Cow')">🐮</div>
+            <div class="word">Cow</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/cow.mp3', event)">🔊</div>
+        </div>
+
+        <div class="card">
+            <div class="letter" onclick="speak('Lion')">🦁</div>
+            <div class="word">Lion</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/lion.mp3', event)">🔊</div>
+        </div>
+
+        <div class="card">
+            <div class="letter" onclick="speak('Elephant')">🐘</div>
+            <div class="word">Elephant</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/elephant.mp3', event)">🔊</div>
+        </div>
+
+        <div class="card">
+            <div class="letter" onclick="speak('Sheep')">🐑</div>
+            <div class="word">Sheep</div>
+            <div class="sound-btn" onclick="playAnimalSound('sounds/sheep.mp3', event)">🔊</div>
+    </div>
+    </section>
+
+    <section id="colours" class="section">
+    <h2>Colours</h2>
+    <p class="section-text">Tap a colour to learn its name!</p>
+
+    <div class="card-container colours-container">
+        <div class="colour-card" style="background:red" onclick="speak('Red')">Red</div>
+        <div class="colour-card" style="background:blue" onclick="speak('Blue')">Blue</div>
+        <div class="colour-card" style="background:green" onclick="speak('Green')">Green</div>
+        <div class="colour-card" style="background:yellow;color:black" onclick="speak('Yellow')">Yellow</div>
+        <div class="colour-card" style="background:orange" onclick="speak('Orange')">Orange</div>
+        <div class="colour-card" style="background:purple" onclick="speak('Purple')">Purple</div>
+        <div class="colour-card" style="background:pink;color:black" onclick="speak('Pink')">Pink</div>
+        <div class="colour-card" style="background:brown" onclick="speak('Brown')">Brown</div>
+        <div class="colour-card" style="background:black" onclick="speak('Black')">Black</div>
+        <div class="colour-card" style="background:white;color:black;border:2px solid #ccc" onclick="speak('White')">White</div>
+    </div>
+    </section>
+
+    <section id="shapes" class="section">
+    <h2>🔺 Shapes</h2>
+    <p class="section-text">Tap a shape to hear its name!</p>
+
+    <div class="card-container shapes-container">
+        <div class="shape-card circle" onclick="speak('Circle')">Circle</div>
+        <div class="shape-card square" onclick="speak('Square')">Square</div>
+        <div class="shape-card rectangle" onclick="speak('Rectangle')">Rectangle</div>
+        <div class="shape-card triangle" onclick="speak('Triangle')"></div>
+        <div class="shape-card oval" onclick="speak('Oval')">Oval</div>
+        <div class="shape-card star" onclick="speak('Star')">
+            <span class="shape-text">Star</span>
+        </div>
+        <div class="shape-card heart" onclick="speak('Heart')">
+            <span class="shape-text">Heart</span>
+        </div>
+        <div class="shape-card diamond" onclick="speak('Diamond')">
+            <span class="diamond-text">Diamond</span>
+        </div>
+        <div class="shape-card pentagon" onclick="speak('Pentagon')">Pentagon</div>
+        <div class="shape-card hexagon" onclick="speak('Hexagon')">Hexagon</div>
+    </div>
+    </section>
+
+
+  <footer>
+    Made with ❤️ for Kids
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

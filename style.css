@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  background: linear-gradient(to bottom, #87CEEB, #FFE4E1);
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #ff4081;
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.home-buttons {
+  margin: 20px 0;
+}
+
+#animals {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 45px;
+  padding: 12px 25px;
+  margin: 20px;
+  border-radius: 30px;
+  border: 5px solid #6dad76;
+  cursor: hand;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.home-btn {
+  display: none; /* hidden initially */
+}
+
+
+#alphabets {
+  display: none; /* hidden initially */
+}
+
+#numbers {
+  display: none;
+} /* hidden initially */
+
+.colours-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+}
+
+.colour-card {
+  height: 120px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s;
+}
+
+.colour-card:hover {
+  transform: scale(1.1);
+}
+
+#colours {
+  display: none;
+} /* hidden initially */
+
+/* Shapes */
+#shapes {
+  display: none;
+}
+
+.shapes-container {
+  display: grid;
+
+  /* Stable grid across devices */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+  column-gap: 25px;   /* columns tight */
+  row-gap: 60px;      /* rows spaced */
+
+  justify-items: center;
+  align-items: center;
+
+  padding: 40px 16px; /* mobile-safe padding */
+}
+
+.shape-card {
+  touch-action: manipulation;
+  height: 120px;
+  width: 120px;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.shape-card:hover {
+  transform: scale(1.1);
+}
+
+/* Individual shapes */
+.circle {
+  border-radius: 50%;
+  background: #ff5252;
+  color: white;
+}
+
+.square {
+  background: #4caf50;
+  color: white;
+}
+
+.rectangle {
+  background: #2196f3;
+  color: white;
+  width: 160px;
+  margin: auto;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  background: none;
+  box-shadow: none;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 120px solid #ff9800;
+  position: relative;
+  text-align: center;
+}
+
+.triangle::after {
+  content: "Triangle";
+  position: absolute;
+  top: 70px;
+  left: -35px;
+  width: 70px;
+  
+  color: white;
+  font-weight: bold;
+}
+
+.oval {
+  background: #9c27b0;
+  border-radius: 50%;
+  width: 160px;
+  margin: auto;
+  color: white;
+}
+
+.star {
+  background: none;
+  box-shadow: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star::before {
+  content: "★";
+  font-size: 170px;
+  color: #ecd505;
+}
+
+.star .shape-text {
+  position: absolute;
+  font-weight: bold;
+  color: #f8f4f4;
+  z-index: 2;
+  top: 65px;
+}
+
+.heart {
+  background: none;
+  box-shadow: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart::before {
+  content: "❤";
+  font-size: 150px;
+  color: #e91e63;
+}
+
+.heart .shape-text {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+}
+
+.diamond {
+  background: #00bcd4;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep text straight */
+.diamond-text {
+  transform: rotate(-45deg); /* 👈 counter rotation */
+  font-weight: bold;
+  color: white;
+}
+
+.diamond:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.pentagon {
+  background: #795548;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  color: white;
+}
+
+.hexagon {
+  background: #607d8b;
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  color: white;
+}
+
+.sound-btn {
+  font-size: 1.4rem;
+  margin-top: 8px;
+  cursor: pointer;
+  background: #e6f7ff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sound-btn:hover {
+  background: #b3ecff;
+  transform: scale(1.1);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card .letter {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.card .emoji {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+.card .word {
+  font-size: 1.4rem;   /* 👈 smaller text */
+  color: #444;
+  margin-top: 5px;
+}
+
+.card:hover {
+  transform: scale(1.15) rotate(2deg);
+  background: #fffacd;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  width: 45px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 10s infinite linear;
+  z-index: 0;
+
+}
+
+.red { background: red; left: 10%; animation-delay: 0s; }
+.yellow { background: yellow; left: 45%; animation-delay: 2s; }
+.blue { background: blue; left: 80%; animation-delay: 4s; }
+
+@keyframes float {
+  0% { top: 100%; }
+  100% { top: -100px; }
+}
+
+@media (max-width: 768px) {
+  .shape-card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shape-card {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .triangle {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #ff9800;
+  }
+}
+
+footer {
+  font-size: 1rem;
+  padding: 15px;
+  color: #444;
+}
